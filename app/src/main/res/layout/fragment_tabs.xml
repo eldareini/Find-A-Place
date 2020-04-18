@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="example.com.eldareini.eldareinifinalprogect.fragments.TabsFragment">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/myToolbar">
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <view
+        android:id="@+id/pager"
+        class="androidx.viewpager.widget.ViewPager"
+        id="@+id/view"
+        layout_alignParentStart="true"
+        layout_below="@+id/myToolbar"
+        layout_marginStart="17dp"
+        layout_marginTop="46dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tabs" />
+
+</RelativeLayout>

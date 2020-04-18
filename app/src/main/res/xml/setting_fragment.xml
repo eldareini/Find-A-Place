@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:defaultValue="KM"
+        android:entries="@array/distance"
+        android:entryValues="@array/distance"
+        android:key="preference_distance"
+        android:title="KM / Miles ?" />
+
+    <example.com.eldareini.eldareinifinalprogect.preference.SeekBarPreference
+        android:key="preference_radius"
+        android:title="Radius"
+        android:max="50"
+        android:defaultValue="15" />
+</PreferenceScreen>

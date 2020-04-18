@@ -1,0 +1,144 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#abfbe3"
+    android:orientation="vertical"
+    tools:context="example.com.eldareini.eldareinifinalprogect.fragments.PlaceFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnWaze"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:padding="10dp"
+            app:srcCompat="@mipmap/waze" />
+
+        <ImageButton
+            android:id="@+id/btnCall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:padding="10dp"
+            app:srcCompat="@mipmap/call" />
+
+        <ImageButton
+            android:id="@+id/btnWeb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:padding="10dp"
+            app:srcCompat="@mipmap/web" />
+
+        <ImageView
+            android:id="@+id/imagePlace"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/btnShare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:padding="10dp"
+            app:srcCompat="@mipmap/share" />
+
+        <ImageButton
+            android:id="@+id/btnFavorite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:padding="10dp"
+            app:srcCompat="@mipmap/star" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textPlaceName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textPlaceAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingRight="5dp">
+
+        <TextView
+            android:id="@+id/textRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView"
+            android:layout_toStartOf="@+id/imageView"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:paddingRight="5dp"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="14dp"
+            android:layout_height="15dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            app:srcCompat="@drawable/favorite" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textIsOpen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textOpeningHours"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

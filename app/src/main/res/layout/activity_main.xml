@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="example.com.eldareini.eldareinifinalprogect.activities.MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/myToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.view.menu.ActionMenuItemView
+            android:id="@+id/toolbarAllAround"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@mipmap/place"
+            android:showAsAction="always"
+            android:layout_alignStart="@+id/toolbarSearch" />
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/toolbarSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:queryHint="What are you locking for?"></androidx.appcompat.widget.SearchView>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <FrameLayout
+        android:id="@+id/contanier"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/myToolbar"
+        android:orientation="horizontal">
+
+    </FrameLayout>
+
+</RelativeLayout>

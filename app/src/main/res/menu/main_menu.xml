@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menuSettings"
+        android:title="Settings" />
+    <item
+        android:id="@+id/menuClearFavorits"
+        android:title="Clear Favorits" />
+    <item
+        android:id="@+id/menuExit"
+        android:title="Exit" />
+</menu>

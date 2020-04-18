@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="20dp"
+    android:weightSum="1"
+    app:cardCornerRadius="@dimen/cardview_compat_inset_shadow"
+    app:cardElevation="13dp"
+    app:contentPadding="@dimen/cardview_default_elevation"
+    app:layout_collapseParallaxMultiplier="1.0">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imagePlace"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            app:srcCompat="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/textName"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textSize="18sp"
+            android:layout_alignBottom="@+id/imageMenu"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/textAddress"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imagePlace"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:text="TextView"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textDistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/imageMenu"
+            android:layout_below="@+id/textAddress"
+            android:paddingBottom="5dp"
+            android:text="TextView"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/imageMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="11dp"
+            android:paddingTop="5dp"
+            app:srcCompat="@drawable/menu_option" />
+
+        <ImageView
+            android:id="@+id/imageStar"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="12dp"
+            android:layout_toStartOf="@+id/imageMenu" />
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
